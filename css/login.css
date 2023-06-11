@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* <----------------------------- header ------------------------------> */
+header {
+  height: 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #808080;
+  background-color: #ffffff;
+}
+
+header > .gnb {
+  padding-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+
+header > .gnb > .navigation > a {
+  border-radius: 8px;
+  margin-left: 10px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+header > .gnb > .navigation > #login {
+  background-color: #fbd1b2;
+}
+
+header > .gnb > .navigation > #signup {
+  color: #fff;
+  background-color: #f26a08;
+}
+
+/* <-------------------- main --------------------> */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+}
+
+main > form {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+main > form > .input_container {
+  padding-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+main > form > .input_container > input {
+  background-color: white;
+  border: 1px solid #000;
+  width: 350px;
+  height: 35px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+main > form > .input_container > input::placeholder {
+  font-weight: bold;
+}
+
+main > form > .submit {
+  border: none;
+  background-color: #f26a08;
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+  font-size: large;
+}
