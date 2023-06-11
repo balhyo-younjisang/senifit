@@ -73,3 +73,7 @@ main > .title {
 main > .title > h3:last-child {
   color: #f26a08;
 }
+
+main > .title > h3:last-child {
+  margin-left: 10rem;
+}

@@ -48,3 +48,53 @@ header > .gnb > .navigation > #signup {
   color: #fff;
   background-color: #f26a08;
 }
+
+/* <---------------- main ---------------> */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px;
+}
+
+main fieldset {
+  margin-top: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main fieldset button {
+  margin-top: 10px;
+}
+
+main button {
+  background-color: #f26a08;
+  font-weight: bold;
+  border: none;
+  color: white;
+  padding: 15px;
+}
+
+main .signup {
+  display: flex;
+  flex-direction: column;
+}
+
+main .signup input {
+  background-color: white;
+  border: 1px solid #000;
+  width: 350px;
+  height: 35px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+main .submit {
+  margin-top: 30px;
+  font-size: large;
+}
