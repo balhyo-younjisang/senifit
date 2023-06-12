@@ -94,7 +94,7 @@ main{
 .main_page_1{
   font-family: 'Pretendard';
   font-size: 28px;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/main_img.jpeg);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/main_img.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
