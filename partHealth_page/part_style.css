@@ -58,7 +58,7 @@ aside{
     border-top: none;
     border-bottom: none;
     width: 15vw;
-    height: 45.8vw;
+    height: 100vw;
 }
 .aside_nav>a{
     display: block;
@@ -88,6 +88,20 @@ aside{
   display: flex;
 }
 main{
-  padding-top: 20px;
+  padding: 20px;
   width: 85vw;
 }
+h4{
+  font-size: 28px;
+  margin-top: 40px;
+}
+.video{
+  width: 1100px;
+  padding: 250px;
+  background-color: #808080;
+  border-radius: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+
