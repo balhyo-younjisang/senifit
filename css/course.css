@@ -71,7 +71,7 @@ main {
   transform: 0.3s;
 }
 
-.active {
+.now {
   color: #f26a08;
 }
 
@@ -92,10 +92,10 @@ main {
 
 /* <----------- main section -----------> */
 
-.content_main {
+.content__main {
   width: 85vw;
 }
 
-.content_main > .title {
+.main__header .title {
   padding: 20px;
 }

@@ -7,6 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/course.css">
 </head>
+<?php
+    session_start();
+    if(!isset($_SESSION['username'])) {
+        echo "<script>location.replace('../user/login.php');</script>";
+    }else {
+        $username = $_SESSION['username'];
+    } 
+?>
 
 <body>
     <!-- 헤더 시작 -->
@@ -30,7 +38,7 @@
         <aside class="left_nav">
             <ul>
                 <li>
-                    <a href="#" class="active">메인 페이지</a>
+                    <a href="#" class="now">메인 페이지</a>
                 </li>
                 <li>
                     <a href="../exercise/my_exercise.php">나의 운동</a>
@@ -43,8 +51,10 @@
                 <a href="#">운동하러 가기</a>
             </button>
         </aside>
-        <section class="content_main">
-            <h2 class="title">운동 코스</h2>
+        <section class="content__main">
+            <div class="main__header">
+                <h2 class="title">운동 코스</h2>
+            </div>
         </section>
     </main>
     <!-- 메인 끝 -->

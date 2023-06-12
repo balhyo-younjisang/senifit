@@ -4,9 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SENIFIT</title>
     <link rel="stylesheet" href="../css/part.css">
 </head>
+<?php
+    session_start();
+    if(!isset($_SESSION['username'])) {
+        echo "<script>location.replace('../user/login.php');</script>";
+    }else {
+        $username = $_SESSION['username'];
+    } 
+?>
 
 <body>
     <!-- 헤더 시작 -->
@@ -36,7 +44,7 @@
                     <a href="../exercise/my_exercise.php">나의 운동</a>
                 </li>
                 <li>
-                    <a href="./part.php" class="active">부위별 운동</a>
+                    <a href="./part.php" class="now">부위별 운동</a>
                 </li>
             </ul>
             <button>
@@ -46,11 +54,21 @@
         <section class="content__main">
             <div class="main__header">
                 <h2 class="title">부위별 운동</h2>
-                <div class="category_wrap"></div>
+                <div class="category_wrap">
+                    <ul>
+                        <li class="category active">머리</li>
+                        <li class="category">목</li>
+                        <li class="category">허리</li>
+                        <li class="category">골반</li>
+                        <li class="category">발</li>
+                        <li class="category">다리</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
     <!-- 메인 끝 -->
+    <script src="../scripts/part.js"></script>
 </body>
 
 </html>

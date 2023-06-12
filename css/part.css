@@ -71,7 +71,7 @@ main {
   transform: 0.3s;
 }
 
-.active {
+.now {
   color: #f26a08;
 }
 
@@ -98,4 +98,30 @@ main {
 
 .main__header .title {
   padding: 20px;
+}
+
+.main__header .category_wrap {
+  padding-left: 20px;
+}
+
+.main__header .category_wrap ul {
+  display: flex;
+}
+
+.main__header .category_wrap ul .category {
+  margin: 10px;
+  padding: 5px 20px;
+  border-radius: 15px;
+  background-color: #fbd1b2;
+  color: #808080;
+  font-weight: bold;
+}
+
+.main__header .category_wrap ul .category:nth-child(1) {
+  margin-left: 0px;
+}
+.main__header .category_wrap ul .category:hover,
+.main__header .category_wrap ul .active {
+  background-color: #f26a08;
+  color: white;
 }
