@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main_page.css">
+</head>
+<body>
+    <header>
+            <nav class="gnb">
+                <a href="index.php"><img src="./imgs/logo.svg" alt="SENFIT 로고"></a>
+                <div class="navigation">
+                    <a href="/user/login.php" id="login">로그인</a>
+                    <a href="/user/signup.php" id="signup">회원가입</a>
+                </div>
+            </nav>
+    </header>
+</body>
+</html>
