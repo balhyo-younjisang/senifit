@@ -88,21 +88,41 @@ aside{
   display: flex;
 }
 main{
-  padding-top: 50px;
+  padding-top: 20px;
   width: 85vw;
-  display: flex;
-  justify-content: center;
 }
 .main_page_1{
-  display: flex;
-  justify-content: left;
+  font-family: 'Pretendard';
+  font-size: 25px;
   background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/main_img.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 1500px;
-  height: 565px;
+  width: 1450px;
+  height: 350px;
   border-radius: 20px;
+  padding: 25px;
+}
+.main_page_2{
+  font-family: 'Pretendard';
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 50px;
+
+}
+.main_page_2_layout{
+  display: flex;
+  justify-content: space-around;
+}
+.main_go_button{
+  margin-top: 230px;
+  color: #f26a08;
+}
+.video{
+  width: 500px;
+  height: 300px;
+  background-color: rgb(212, 212, 212);
+  border-radius: 12px;
 }
 
 
