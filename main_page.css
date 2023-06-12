@@ -51,16 +51,14 @@
 }
 
 /* main */
-main{
-  display: flex;
-}
+
 aside{
     border: 1px solid black;
     border-left: none;
     border-top: none;
     border-bottom: none;
     width: 15vw;
-    height: 911px;
+    height: 45.8vw;
 }
 .aside_nav>a{
     display: block;
@@ -86,19 +84,24 @@ aside{
     background-color: #f26a08;
     color: white;
 }
-.center_main{
-  width: 194.9%;
-  background-color: black;
+.main_split{
+  display: flex;
+}
+main{
+  padding-top: 50px;
+  width: 85vw;
+  display: flex;
+  justify-content: center;
 }
 .main_page_1{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/main_img.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 1116px;
-  height: 415.13px;
+  width: 1500px;
+  height: 565px;
   border-radius: 20px;
 }
 
