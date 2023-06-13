@@ -64,36 +64,32 @@ aside{
     width: 15vw;
     height: 60vw;
 }
-.aside_nav>a{
-    display: block;
-    font-family: 'Pretendard';
-    font-size: 24px;
-    padding: 13px;
+.aside_nav ul li {
+  padding: 0 30px;
+  height: 60px;
+  text-align: left;
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 24px;
 }
-.aside_nav > a:nth-child(1) {
-  color: #F26A08;
-}
-.aside_nav > a:nth-child(n +2):hover {
-  background-color: #F26A08;
-  color: #fff;
-}
+
 .aside_nav_button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 13px;
-}
-#go>a{
-    display: block;
-    font-family: 'Pretendard';
-    font-size: 24px;
-    padding: 12px;
-    padding-left: 50px;
-    padding-right: 50px;
-    border: 1px solid #f26a08;
-    border-radius: 12px;
+    margin: 10px 30px;
+    height: 55px;
     background-color: #f26a08;
     color: white;
+    font-size: 24px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 55px;
+}
+.menu_main {
+  color: #f26a08;
+}
+.aside_nav ul li:hover:not(.menu_main) {
+  background-color: #f26a08;
+  color: #fff;
 }
 .main_split{
   display: flex;
