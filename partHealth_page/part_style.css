@@ -80,6 +80,15 @@ font-size: 24px;
   text-align: center;
   line-height: 55px;
 }
+
+.menu_main {
+  color: #f26a08;
+}
+.aside_nav ul li:hover:not(.menu_main) {
+  background-color: #f26a08;
+  color: #fff;
+}
+
 .main_split{
   display: flex;
 }
