@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="account_style.css">
+</head>
+<body>
+    <header>
+        <nav class="gnb">
+            <a href="index.php"><img src="../img/logo.svg" alt="SENFIT 로고"></a>
+            <div class="navigation">
+                <a href="/user/login.php" id="login">로그인</a>
+                <a href="/user/signup.php" id="signup">회원가입</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article class="account_title">
+            <p>회원가입</p>
+        </article>
+        
+        <article class="account_in">
+            <p>회원정보를 입력해주세요.</p>
+            <input type="email" placeholder="아이디(이메일)" name="Id"><br>
+            <input type="password" placeholder="비밀번호" name="Pw"><br>
+            <input type="text" placeholder="이름" name="Name">
+        </article>
+
+        <article class="account_phone">
+            <p>핸드폰 번호를 입력해주세요.</p>
+            <input type="text" value="000-0000-0000" name="phone_number"><br>
+            <a href="#">인증번호 발송</a>
+        </article>
+
+        <article class="check_number">
+            <p>인증번호를 입력해주세요.</p>
+            <input type="text" value="000000" name="Check_number"><br>
+            <a href="#">확인하기</a><br>
+            <a href="#">가입하기</a>
+        </article>
+    </main>
+</body>
+</html>
