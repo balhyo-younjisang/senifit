@@ -40,7 +40,6 @@
   }
   
   header > .gnb {
-    padding-top: 3px;
     display: flex;
     align-items: center;
     justify-content: space-between;
