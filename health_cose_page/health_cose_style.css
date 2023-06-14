@@ -62,7 +62,7 @@ aside{
     border-top: none;
     border-bottom: none;
     width: 15vw;
-    height: 60vw;
+    height: 110vw;
 }
 .aside_nav ul li {
   padding: 0 30px;
@@ -97,18 +97,32 @@ main{
 article{
   padding-top: 20px;
   width: 85vw;
-  margin: px;
 }
 
 p{
-    font-size: 24px;
-    font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .cose_title{
-    padding: 10px 0px 10px 30px;
+  padding: 10px 0px 10px 30px;
 }
 
+.cose_list>li{
+  padding: 15px 0px 15px 37px;
+}
+
+li>p{
+  margin-bottom: 30px;
+}
+
+.video{
+  width: 80vw;
+  height: 30vw;
+  background-color: #808080;
+  border-radius: 20px;
+}
 
 
 
