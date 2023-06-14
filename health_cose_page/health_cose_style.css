@@ -96,45 +96,20 @@ main{
 }
 article{
   padding-top: 20px;
-  width: 85vw; 
-}
-.main_page_1{
-  font-family: 'Pretendard';
-  font-size: 28px;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/main_img.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 1400px;
-  height: 430px;
-  border-radius: 20px;
-  padding: 20px;
-}
-.main_go_button{
-  margin-top: 260px;
-  color: #f26a08;
-}
-.main_page_2{
-  font-family: 'Pretendard';
-  font-size: 20px;
-  border-radius: 20px;
-  padding: 85px;
-
-}
-.main_page_2_layout{
-  display: flex;
-  justify-content: space-between;
-}
-.main_page_2_layout>div>h2{
-  margin-top: 20px;
+  width: 85vw;
+  margin: px;
 }
 
-.video{
-  width: 700px;
-  height: 370px;
-  background-color: rgb(212, 212, 212);
-  border-radius: 12px;
+p{
+    font-size: 24px;
+    font-weight: 700;
 }
+
+.cose_title{
+    padding: 10px 0px 10px 30px;
+}
+
+
 
 
   
