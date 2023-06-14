@@ -7,8 +7,14 @@
   body {
     height: 100%;
   }
+
   body::-webkit-scrollbar{
     display: none;
+  }
+
+  @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
   }
   
   a {
@@ -23,6 +29,7 @@
     vertical-align: middle;
   }
   header {
+    font-family: 'Pretendard-Regular';
     height: 50px;
     box-sizing: border-box;
     border-bottom: 1px solid #808080;
@@ -67,7 +74,8 @@ main{
 }
 
 article{
-    padding-top: 55px;
+  font-family: 'Pretendard-Regular';
+  padding-top: 55px;
 }
 
 p:nth-child(n+3){
@@ -80,23 +88,25 @@ p:nth-child(n+3){
 }
 
 input{
-    font-size: 24px;
-    font-weight: 700;
-    padding: 20px 5px 20px 5px; 
-    width: 100%;
-    margin-top: 15px;
+  font-family: 'Pretendard-Regular';
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px 5px 20px 5px; 
+  width: 100%;
+  margin-top: 15px;
 }
 
 article>a{
-    display: inline-block;
-    text-align: center;
-    color: #ffffff;
-    font-size: 28px;
-    font-weight: 700;
-    background-color: #f26a08;
-    padding: 20px 12px 20px 12px; 
-    width: 100%;
-    margin-top: 20px;
+  font-family: 'Pretendard-Regular';
+  display: inline-block;
+  text-align: center;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  background-color: #f26a08;
+  padding: 20px 12px 20px 12px; 
+  width: 100%;
+  margin-top: 20px;
 }
 
 p:nth-child(n+1){
