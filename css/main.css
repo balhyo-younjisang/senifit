@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+header {
+  height: 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #808080;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > .gnb {
+  padding-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 30px;
+  width: 100%;
+}
+
+header > .gnb > .navigation > a {
+  border-radius: 8px;
+  margin-left: 10px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+header > .gnb > .navigation > #login {
+  background-color: #fbd1b2;
+}
+
+header > .gnb > .navigation > #signup {
+  color: #fff;
+  background-color: #f26a08;
+}
+
+/* main */
+/* <--------------- aside -----------------------------> */
+.left_nav {
+  width: 15vw;
+  box-sizing: border-box;
+  border-right: 1px solid #808080;
+}
+
+.left_nav ul {
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.left_nav ul li {
+  line-height: 40px;
+  font-weight: 700;
+  display: block;
+  transform: 0.3s;
+}
+
+.now {
+  color: #f26a08;
+}
+
+.left_nav ul li:hover {
+  color: #f26a08;
+}
+
+.left_nav button {
+  margin-top: 15px;
+  background-color: #f26a08;
+  color: white;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+}
+main {
+  display: flex;
+}
+article {
+  padding-top: 20px;
+  width: 85vw;
+}
+.main_page_1 {
+  font-family: "Pretendard";
+  font-size: 26px;
+  opacity: 0.7;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../imgs/main.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1400px;
+  height: 430px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+  transition: 0.5s;
+}
+.main_page_1:hover {
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+.main_go_button {
+  margin-top: 260px;
+  color: #f26a08;
+}
+.main_page_2 {
+  font-family: "Pretendard";
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 85px;
+}
+.main_page_2_layout {
+  display: flex;
+  justify-content: space-between;
+}
+.main_page_2_layout > div > h2 {
+  margin-top: 20px;
+}
+
+.video {
+  width: 35vw;
+  height: 50vh;
+  background-color: rgb(212, 212, 212);
+  border-radius: 12px;
+}

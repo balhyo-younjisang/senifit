@@ -9,7 +9,8 @@
 
 <body>
     <?php 
-        echo "Hello"
+        session_start();
+        
     ?>
 </body>
 
