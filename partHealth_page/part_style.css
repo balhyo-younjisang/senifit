@@ -101,7 +101,7 @@ main{
   display: flex;
 }
 article{
-  padding-top: 10px;
+  padding-top: 30px;
   width: 85vw; 
   border: 1px solid black;
   border-right: none;
@@ -109,11 +109,11 @@ article{
   border-bottom: none;
 }
 article>div{
-  padding: 10px 10px 10px 30px;
+  padding: 0px 10px 10px 30px;
 }
 h4{
   font-size: 28px;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 .video{
   display: flex;
