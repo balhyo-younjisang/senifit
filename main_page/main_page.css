@@ -11,6 +11,7 @@
   html,
   body {
     height: 100%;
+    font-family: 'Pretendard-Regular';
   }
   
   a {
@@ -20,6 +21,8 @@
   ul{
     list-style: none;
   }
+
+
   
   img {
     vertical-align: middle;

@@ -6,6 +6,12 @@
 html,
 body {
   height: 100%;
+  font-family: 'Pretendard-Regular';
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
 }
 
 a {
@@ -57,10 +63,8 @@ header > .gnb > .navigation > #signup {
 /* main */
 
 aside{
-  border: 1px solid black;
-  border-left: none;
-  border-top: none;
-  border-bottom: none;
+  font-family: 'Pretendard-Regular';
+  
   width: 15vw;
   height: 60vw;
 }
@@ -93,24 +97,36 @@ font-size: 24px;
   color: #fff;
 }
 
-.main_split{
+main{
   display: flex;
 }
-main{
-  padding: 20px;
-  width: 85vw;
+article{
+  padding-top: 10px;
+  width: 85vw; 
+  border: 1px solid black;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+}
+article>div{
+  padding: 10px 10px 10px 30px;
 }
 h4{
   font-size: 28px;
   margin-top: 40px;
 }
 .video{
-  width: 1100px;
-  padding: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 25vw;
   background-color: #808080;
   border-radius: 20px;
   margin-top: 40px;
-  text-align: center;
+}
+.main_lorem{
+  width: 50vw;
 }
 
 
