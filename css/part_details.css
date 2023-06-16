@@ -6,7 +6,13 @@
 html,
 body {
   height: 100%;
-  overflow-x: hidden;
+  font-family: "Pretendard-Regular";
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
 }
 
 a {
@@ -31,7 +37,6 @@ header {
 }
 
 header > .gnb {
-  padding-top: 3px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,6 +61,7 @@ header > .gnb > .navigation > #signup {
 }
 
 /* main */
+
 /* <--------------- aside -----------------------------> */
 .left_nav {
   height: 100%;
@@ -99,50 +105,30 @@ main {
   display: flex;
 }
 article {
-  padding-top: 20px;
+  padding-top: 30px;
   width: 85vw;
+  border: 1px solid black;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
 }
-.main_page_1 {
-  font-family: "Pretendard";
-  font-size: 26px;
-  opacity: 0.7;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../imgs/main.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 1400px;
-  height: 430px;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 20px;
-  transition: 0.5s;
+article > div {
+  padding: 0px 10px 10px 30px;
 }
-.main_page_1:hover {
-  opacity: 0.9;
-  transform: scale(1.01);
+h4 {
+  font-size: 28px;
+  margin-top: 0px;
 }
-.main_go_button {
-  margin-top: 260px;
-  color: #f26a08;
-}
-.main_page_2 {
-  font-family: "Pretendard";
-  font-size: 20px;
-  border-radius: 20px;
-  padding: 85px;
-}
-.main_page_2_layout {
-  display: flex;
-  justify-content: space-between;
-}
-.main_page_2_layout > div > h2 {
-  margin-top: 20px;
-}
-
 .video {
-  width: 35vw;
-  height: 50vh;
-  background-color: rgb(212, 212, 212);
-  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 25vw;
+  background-color: #808080;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+.main_lorem {
+  width: 50vw;
 }

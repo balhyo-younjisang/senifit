@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../css/part.css">
 </head>
 <?php
-    session_start();
-    if(!isset($_SESSION['username'])) {
-        echo "<script>location.replace('../user/login.php');</script>";
-    }else {
-        $username = $_SESSION['username'];
-    } 
+    // session_start();
+    // if(!isset($_SESSION['username'])) {
+    //     echo "<script>location.replace('../user/login.php');</script>";
+    // }else {
+    //     $username = $_SESSION['username'];
+    // } 
 ?>
 
 <body>
@@ -38,7 +38,7 @@
         <aside class="left_nav">
             <ul>
                 <li>
-                    <a href="#">메인 페이지</a>
+                    <a href="../main.php">메인 페이지</a>
                 </li>
                 <li>
                     <a href="../exercise/my_exercise.php">나의 운동</a>
@@ -56,7 +56,7 @@
                 <h2 class="title">부위별 운동</h2>
                 <div class="category_wrap">
                     <ul>
-                        <li class="category active">머리</li>
+                        <li class="category">머리</li>
                         <li class="category">목</li>
                         <li class="category">허리</li>
                         <li class="category">골반</li>

@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../css/course.css">
 </head>
 <?php
-    session_start();
-    if(!isset($_SESSION['username'])) {
-        echo "<script>location.replace('../user/login.php');</script>";
-    }else {
-        $username = $_SESSION['username'];
-    } 
+    // session_start();
+    // if(!isset($_SESSION['username'])) {
+    //     echo "<script>location.replace('../user/login.php');</script>";
+    // }else {
+    //     $username = $_SESSION['username'];
+    // } 
 ?>
 
 <body>
