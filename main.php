@@ -10,7 +10,7 @@
 <?php
     session_start(); 
     if(!isset($_SESSION['username'])) { // 로그인이 안되어있다면
-        // echo "<script>location.replace('../user/login.php');</script>"; // 로그인 페이지로 이동
+        echo "<script>location.replace('../user/login.php');</script>"; // 로그인 페이지로 이동
     }else {
         $username = $_SESSION['username']; // 유저네임 변수에 세션 유저네임 값 담기
     } 

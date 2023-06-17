@@ -11,6 +11,7 @@
     session_start();
     if(isset($_SESSION['username'])) { // 로그인 되어있다면
         echo "<script>location.replace('../user/main.php');</script>"; // 메인 페이지로 이동
+        exit;
     }
 ?>
 
@@ -40,7 +41,7 @@
             <fieldset class="phone">
                 <legend>핸드폰 번호를 입력해주세요.</legend>
                 <input type="tel" name="tel" id="tel" placeholder="숫자만 입력해주세요" required>
-                <button onclick="" type="button">인증번호 발송</button> <!-- verify phone number -->
+                <button class="tel_btn" type="button">인증번호 발송</button> <!-- verify phone number -->
             </fieldset>
             <fieldset class="verify">
                 <legend>인증번호를 입력해주세요.</legend>
@@ -52,6 +53,7 @@
         </form>
     </main>
     <!-- 메인 끝 -->
+    <script src="../scripts/signup.js"></script>
 </body>
 
 </html>
