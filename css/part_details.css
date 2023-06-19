@@ -119,16 +119,3 @@ h4 {
   font-size: 28px;
   margin-top: 0px;
 }
-.video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50vw;
-  height: 25vw;
-  background-color: #808080;
-  border-radius: 20px;
-  margin-top: 40px;
-}
-.main_lorem {
-  width: 50vw;
-}

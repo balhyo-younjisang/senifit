@@ -65,7 +65,9 @@
                     <h2 style="margin-bottom: 20px;">추천 운동 코스</h2>
                     <div class="main_page_2_layout">
                         <div>
-                            <div class="video"></div>
+                            <div class="video">
+                                <img src="">
+                            </div>
                             <h2>운동 코스</h2>
                         </div>
                         <div>

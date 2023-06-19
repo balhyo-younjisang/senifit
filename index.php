@@ -7,6 +7,14 @@
     <title>SENIFIT</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
+<?php
+    session_start();
+
+    if(isset($_SESSION['username'])) {
+        echo "<script>location.replace('./main.php');</script>";
+        exit;
+    }
+?>
 
 <body>
     <header>
@@ -22,7 +30,7 @@
         <article class="title">
             <h3>시니어들의 건강을 책임져줄</h3>
             <h3>새로운 헬스케어 플랫폼</h3>
-            <h3>SENFIT</h3>
+            <h3>SENIFIT</h3>
         </article>
     </main>
 </body>

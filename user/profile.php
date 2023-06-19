@@ -38,7 +38,7 @@
             <div style="display: flex;">
                 <a href="#" class="my_img"></a>
                 <div class="my_name">
-                    <h4><a href="#">OOO님</a></h4>
+                    <h4><a href="#"><?php echo $_SESSION['username']?>님</a></h4>
                 </div>
             </div>
             <div>

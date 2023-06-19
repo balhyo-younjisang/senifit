@@ -53,7 +53,7 @@
         </aside>
         <section class="content__main">
             <div class="main__header">
-                <h2 class="title">$$$님의 아픈 신체 부위를 입력해주세요.</h2>
+                <h2 class="title"><?php echo $_SESSION['username'] ?>님의 아픈 신체 부위를 입력해주세요.</h2>
                 <h2 class="title">아픈 신체 부위를 제외한 운동을 매일 3개씩 추천해드립니다.</h2>
                 <div class="category_wrap">
                     <ul>

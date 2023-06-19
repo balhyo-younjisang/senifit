@@ -10,7 +10,7 @@
 <?php
     session_start();
     if(isset($_SESSION['username'])) { // 로그인 되어있다면
-        echo "<script>location.replace('../user/main.php');</script>"; // 메인 페이지로 이동
+        echo "<script>location.replace('../main.php');</script>"; // 메인 페이지로 이동
         exit;
     }
 ?>

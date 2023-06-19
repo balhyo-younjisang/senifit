@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="../css/part.css">
 </head>
 <?php
-    // session_start();
-    // if(!isset($_SESSION['username'])) {
-    //     echo "<script>location.replace('../user/login.php');</script>";
-    // }else {
-    //     $username = $_SESSION['username'];
-    // } 
+    session_start();
+    if(!isset($_SESSION['username'])) {
+        echo "<script>location.replace('../user/login.php');</script>";
+    }else {
+        $username = $_SESSION['username'];
+    } 
+
+    $conn = mysqli_connect('localhost', 'root', 'Yydo0825..sql', 'senifit');
+
+    $q = "SELECT * FROM exercise limit 0,10";
+
+    $content = $conn->query($q);
 ?>
 
 <body>
@@ -66,6 +72,13 @@
                 </div>
             </div>
         </section>
+        <?php
+            while($exercise = $content->fetch_array()) { // 반복문 돌며 렌더링
+                $title = $exercise['name'];
+                $idx = $exercise['_id'];
+        ?>
+        <a href="http://localhost/exercise/part_details.php?idx=<?php echo $idx ?>"><?php echo $title ?></a>
+        <?php } ?>
     </main>
     <!-- 메인 끝 -->
     <script src="../scripts/part.js"></script>
