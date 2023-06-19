@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="../css/part_details.css">
 </head>
 <?php
-    session_start();
-    if(!isset($_SESSION['username'])) {
-        echo "<script>location.replace('../user/login.php');</script>";
+    session_start(); // 세션 사용 
+    if(!isset($_SESSION['username'])) { // 만약 세션이 없다면
+        echo "<script>location.replace('../user/login.php');</script>"; // 로그인 페이지로 이동
     }else {
-        $username = $_SESSION['username'];
+        $username = $_SESSION['username']; // 세션이 있다면 변수에 값 저장
     } 
 
-    $conn = mysqli_connect('localhost', 'root', 'Yydo0825..sql', 'senifit');
+    $conn = mysqli_connect('localhost', 'root', 'Yydo0825..sql', 'senifit'); // mysql 연결
     
     $idx = $_GET['idx']; // URL에서 데이터 가져오기 
-    $q = "SELECT * FROM exercise WHERE _id = $idx"; 
-    $content = $conn->query($q);
-    $exercise = $content -> fetch_array();
+    $q = "SELECT * FROM exercise WHERE _id = $idx";  // DB에서 idx 변수 사용해 값 찾기
+    $content = $conn->query($q);  // sql 쿼리문 실행
+    $exercise = $content -> fetch_array();  // 실행한 쿼리문 결과값을 배열로 바꿔서 저장
 
+    // 변수
     $title = $exercise['name'];
     $video = $exercise['video'];
     $method = $exercise['method'];

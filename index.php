@@ -10,8 +10,8 @@
 <?php
     session_start();
 
-    if(isset($_SESSION['username'])) {
-        echo "<script>location.replace('./main.php');</script>";
+    if(isset($_SESSION['username'])) { // 로그인되어 있다면 
+        echo "<script>location.replace('./main.php');</script>"; // 메인 페이지 이동
         exit;
     }
 ?>

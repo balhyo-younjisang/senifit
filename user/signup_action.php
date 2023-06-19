@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <?php
-    $id = $_POST['id'];
-    $pw = $_POST['pw'];
+    $id = $_POST['id']; // post method 통해 넘어온 값 저장
+    $pw = $_POST['pw']; 
     $username = $_POST['name'];
 
     if(!is_null($id) && !is_null($pw) && !is_null($username)) { // 만약 모든 값이 입력되었다면
