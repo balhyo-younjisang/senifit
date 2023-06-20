@@ -57,7 +57,7 @@
                 <div class="main_page_1">
                     <h2>"운동 중 자세 교정을 알려 주는 트레이너가 필요하신가요?"</h2>
                     <h2>실시간 자세 교정 기능을 이용해보세요!</h2>
-                    <h2 class="main_go_button"><a href="#">바로가기</a></h2>
+                    <h2 class="main_go_button"><a href="./exercise/correction.php">바로가기</a></h2>
                 </div>
             </div>
             <div class="main_page_2">
