@@ -57,28 +57,36 @@
                 <a href="#">운동하러 가기</a>
             </button>
         </aside>
-        <section class="content__main">
-            <div class="main__header">
-                <h2 class="title">부위별 운동</h2>
-                <div class="category_wrap">
-                    <ul>
-                        <li class="category">머리</li>
-                        <li class="category">목</li>
-                        <li class="category">허리</li>
-                        <li class="category">골반</li>
-                        <li class="category">발</li>
-                        <li class="category">다리</li>
-                    </ul>
+        <div class="content_wrap">
+            <section class="content__head">
+                <div class="head__header">
+                    <h2 class="title">부위별 운동</h2>
+                    <div class="category_wrap">
+                        <ul>
+                            <li class="category">복부</li>
+                            <li class="category">목</li>
+                            <li class="category">허리</li>
+                            <li class="category">골반</li>
+                            <li class="category">팔</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <?php
-            while($exercise = $content->fetch_array()) { // 반복문 돌며 렌더링
-                $title = $exercise['name'];
-                $idx = $exercise['_id'];
-        ?>
-        <a href="http://localhost/exercise/part_details.php?idx=<?php echo $idx ?>"><?php echo $title ?></a>
-        <?php } ?>
+            </section>
+            <section class="content">
+                <?php
+                    while($exercise = $content->fetch_array()) { // 반복문 돌며 렌더링
+                        $title = $exercise['name'];
+                        $idx = $exercise['_id'];
+                        $img = $exercise['image'];
+                ?>
+                <div class="background" style="background-image:url(<?php echo '../'.$img?>)">
+                    <a href="http://localhost/exercise/part_details.php?idx=<?php echo $idx ?>"><?php echo $title ?></a>
+                </div>
+
+                <?php } ?>
+            </section>
+        </div>
+
     </main>
     <!-- 메인 끝 -->
     <script src="../scripts/part.js"></script>

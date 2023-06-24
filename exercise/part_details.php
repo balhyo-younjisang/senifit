@@ -26,7 +26,8 @@
     $title = $exercise['name'];
     $video = $exercise['video'];
     $method = $exercise['method'];
-    $howto = $exercise['howto'];
+    $howto = json_decode($exercise['howto']); // string to json
+    $warning = json_decode($exercise['warning']); // string to json
 ?>
 
 <body>
@@ -68,13 +69,28 @@
                 <?php echo $video ?>
                 <!-- </div> -->
 
-                <h4 style="margin-top: 40px;">설명</h4>
-                <h4 class="explain">
+                <h2 style="margin-top: 40px;">설명</h2>
+                <h3 class="explain">
                     <?php
                         echo $method;
-                        echo $howto;
                     ?>
-                </h4>
+                </h3>
+                <h2 style="margin-top: 40px;">방법</h2>
+                <h3 class="explain">
+                    <?php
+                    for($i=1;$i<=count((array)$howto); $i++) {
+                        $text = $howto->{$i};
+                        echo "<h3>$i. $text</h3>";
+                    }?>
+                </h3>
+                <h2 style="margin-top: 40px;">주의사항</h2>
+                <h3 class=" explain">
+                    <?php
+                    for($i=1;$i<=count((array)$warning); $i++) {
+                        $text = $warning->{$i};
+                        echo "<h3>$i. $text</h3>";
+                    }?>
+                </h3>
             </div>
         </article>
     </main>

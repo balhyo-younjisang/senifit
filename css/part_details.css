@@ -63,6 +63,10 @@ header > .gnb > .navigation > #signup {
 /* main */
 
 /* <--------------- aside -----------------------------> */
+.title {
+  margin-top: 40px;
+}
+
 .left_nav {
   height: 100%;
   width: 15vw;
@@ -114,8 +118,4 @@ article {
 }
 article > div {
   padding: 0px 10px 10px 30px;
-}
-h4 {
-  font-size: 28px;
-  margin-top: 0px;
 }

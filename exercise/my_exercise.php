@@ -57,12 +57,11 @@
                 <h2 class="title">아픈 신체 부위를 제외한 운동을 매일 3개씩 추천해드립니다.</h2>
                 <div class="category_wrap">
                     <ul>
-                        <li class="category">머리</li>
+                        <li class="category">복부</li>
                         <li class="category">목</li>
                         <li class="category">허리</li>
                         <li class="category">골반</li>
-                        <li class="category">발</li>
-                        <li class="category">다리</li>
+                        <li class="category">팔</li>
                     </ul>
                 </div>
             </div>
