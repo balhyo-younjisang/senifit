@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../css/part.css">
 </head>
 <?php
+
+use function PHPSTORM_META\type;
+
     session_start(); // 세션 사용 
     if(!isset($_SESSION['username'])) { // 만약 세션이 없다면
         echo "<script>location.replace('../user/login.php');</script>"; // 로그인 페이지로 이동
@@ -16,8 +19,12 @@
     } 
 
     $conn = mysqli_connect('localhost', 'root', 'Yydo0825..sql', 'senifit'); // mysql 연결
+    $q = "SELECT * FROM exercise"; // 쿼리문 설정
 
-    $q = "SELECT * FROM exercise limit 0,10"; // 쿼리문 설정
+    if(isset($_GET['category']))  {
+        $CATEGORY = $_GET['category'];
+        $q.=" WHERE part = '$CATEGORY'";
+    }
 
     $content = $conn->query($q);  // DB에서 값 찾고 변수에 저장
 ?>
@@ -79,8 +86,9 @@
                         $idx = $exercise['_id'];
                         $img = $exercise['image'];
                 ?>
-                <div class="background" style="background-image:url(<?php echo '../'.$img?>)">
-                    <a href="http://localhost/exercise/part_details.php?idx=<?php echo $idx ?>"><?php echo $title ?></a>
+                <div class="background">
+                    <a href="http://localhost/exercise/part_details.php?idx=<?php echo $idx ?>"
+                        style="background-image:url(<?php echo '../'.$img?>)"><?php echo $title ?></a>
                 </div>
 
                 <?php } ?>
